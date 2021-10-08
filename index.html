@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dronen-Sschwarm Premium Experience AG</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/main-navigation-element.js"></script>
+  <script src="js/lib/anime.min.js"></script>
+
+</head>
+
+<body>
+
+<script src="js/main.js"></script>
+
+<header>
+  <nav is="main-navigation"></nav>
+  <!--  <h1>Willkommen in unserer Webseite</h1>-->
+  <hr>
+</header>
+
+<div class="svg-container">
+  <div class="square">
+    <img src="img/drone.svg" width="50px" height="50px" >
+  </div>
+  <svg width="600" height="450">
+    <path d="M380,10q-152,103,-2,257q-149,137,41,154q204,9,61,-149q192,-105,36,-259q-82,275,-136,-2" stroke="black"
+          stroke-width="1px" fill="none"/>
+  </svg>
+</div>
+
+
+<script>
+  let path = anime.path('path');
+
+  let easings = ['linear', 'easeInCubic', 'easeOutCubic', 'easeInOutCubic'];
+
+  let motionPath = anime({
+    targets: '.square',
+    translateX: path('x'),
+    translateY: path('y'),
+    easing: function (el, i) {
+      return easings[i];
+    },
+    duration: 10000,
+    loop: true
+  });
+</script>
+
+
+<footer>
+  Impressum
+</footer>
+
+</body>
+
+</html>
