@@ -1,6 +1,6 @@
 // favicon for every page
 
-let head = document.getElementsByName('head');
+let head = document.getElementsByTagName('head');
 let favicon = document.createElement('link')
 favicon.setAttribute('rel', 'shortcut icon');
 favicon.setAttribute('type', 'image/x-icon');
