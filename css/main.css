@@ -7,6 +7,10 @@
   left: -1px;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .svg-container{
   position: relative;
 }
