@@ -1,26 +1,22 @@
 /*! main.css */
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url(../font/font.css);
 
 /* color theme */
 * {
-  --brand: #ffbf00;
+  --brand: #ff8400;
   --brand-hue: 200;
   --brand-saturation: 100%;
   --brand-lightness: 50%;
   --brand-dark: hsl(var(--brand-hue) calc(var(--brand-saturation) / 2) calc(var(--brand-lightness) / 1.5));
   --text1-dark: hsl(var(--brand-hue) 15% 85%);
   --text2-dark: hsl(var(--brand-hue) 5% 65%);
-  --surface1-dark: hsl(var(--brand-hue) 10% 10%);
-  --surface2-dark: hsl(var(--brand-hue) 10% 15%);
-  --surface3-dark: hsl(var(--brand-hue) 5%  20%);
+  --surface1-dark: #343030;
+  --surface2-dark: #07070e;
+  --surface3-dark: #555555;
   --surface4-dark: hsl(var(--brand-hue) 5% 25%);
   --surface-shadow-dark: var(--brand-hue) 50% 3%;
   --shadow-strength-dark: .8;
-}
-
-:root {
-  --main-color:#06c;
 }
 
 html, body{
@@ -28,10 +24,11 @@ html, body{
   margin: 0;
 }
 
-.main{
-  height: 100%;
+body{
+  font-family: 'Open Sans';
   display: flex;
   flex-direction: column;
+  background-color: var(--surface2-dark);
 }
 
 footer{
@@ -66,12 +63,19 @@ footer{
 
 .main-navigation .nav-item{
   flex-grow: 1;
-  background-color: var(--surface3-dark); /* Green */
+  background-color: var(--surface1-dark);
   border: none;
-  border-right: solid;
   color: white;
-  padding: 15px 32px;
-  font-size: 16px;
+  padding: 2ex 3em;
   text-align: center;
+  text-decoration: none;
+}
+
+main{
+  padding: 1vh;
+}
+
+footer{
+  padding: 1vh;
 }
 /*************** navigation ***************/
