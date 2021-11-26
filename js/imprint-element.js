@@ -4,6 +4,7 @@ class ImprintElement extends HTMLAnchorElement {
   }
 
   connectedCallback() {
+    this.classList.add("imprint");
     this.href = "./imprint.html";
     this.innerText = "Impressum";
   }

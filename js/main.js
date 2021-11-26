@@ -13,7 +13,7 @@ function flyDrone() {
   let easings = ['linear', 'easeInCubic', 'easeOutCubic', 'easeInOutCubic'];
 
   anime({
-    targets: '.square',
+    targets: '#drone',
     translateX: path('x'),
     translateY: path('y'),
     easing: function (el, i) {
