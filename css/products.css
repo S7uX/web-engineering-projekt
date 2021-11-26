@@ -1,0 +1,29 @@
+main{
+    height: 100%;
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center; /* vertical */
+}
+
+.products{
+    display: flex;
+    flex-direction: column;
+    min-width: 850px ;
+    width: 50vw;
+    background-color: var(--surface3-dark);
+    border-radius: 40px;
+    padding: 1em 1em 4ex;
+}
+
+.heading{
+    color: var(--brand)
+}
+
+.products .products-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.products .product-item{
+    width: 50%;
+}

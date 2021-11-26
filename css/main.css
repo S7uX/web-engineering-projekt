@@ -4,19 +4,12 @@
 
 /* color theme */
 * {
-    --brand: #ff8400;
-    --brand-hue: 200;
-    --brand-saturation: 100%;
-    --brand-lightness: 50%;
-    --brand-dark: hsl(var(--brand-hue) calc(var(--brand-saturation) / 2) calc(var(--brand-lightness) / 1.5));
+    --brand: #00ffe1;
     --text1-dark: white;
     --text2-dark: #d7d7d7;
     --surface1-dark: #262626;
     --surface2-dark: #07070e;
     --surface3-dark: #343434;
-    --surface4-dark: hsl(var(--brand-hue) 5% 25%);
-    --surface-shadow-dark: var(--brand-hue) 50% 3%;
-    --shadow-strength-dark: .8;
 }
 
 html, body {
@@ -47,7 +40,7 @@ footer {
     height: 10vh;
     top: -1px;
     left: -1px;
-    background-color: orange; /* defines the background color of the image */
+    background-color: var(--brand); /* defines the background color of the image */
     mask: url(../img/drone.svg) no-repeat center / contain;
     -webkit-mask: url(../img/drone.svg) no-repeat center;
     -webkit-mask-size: contain;
