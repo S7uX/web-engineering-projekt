@@ -94,6 +94,11 @@ footer {
     font-size: small;
 }
 
+.content{
+    margin-left: 30ex;
+    margin-right: 30ex;
+}
+
 .title-container{
     display: flex;
     flex-direction: column;
@@ -110,5 +115,12 @@ footer {
 
 .title-container .title1{
     color: var(--brand);
+}
+
+.video{
+    width: 50vw;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
 
