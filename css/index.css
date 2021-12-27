@@ -16,3 +16,9 @@
         margin-right: 30ex;
     }
 }
+
+@media (max-width: 1200px) {
+    .video {
+        max-width: 100%;
+    }
+}

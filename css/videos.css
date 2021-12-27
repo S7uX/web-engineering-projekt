@@ -2,6 +2,12 @@
   margin-top: 2vh;
 }
 
+@media (max-width: 1000px) {
+  .video {
+    max-width: 100%;
+  }
+}
+
 main{
   display: flex;
   flex-direction: column;
