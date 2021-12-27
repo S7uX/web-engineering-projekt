@@ -94,9 +94,16 @@ footer {
     font-size: small;
 }
 
-.content {
-    margin-left: 30ex;
-    margin-right: 30ex;
+.content{
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+}
+
+@media (min-width: 1400px) {
+    .content {
+        margin-left: 30ex;
+        margin-right: 30ex;
+    }
 }
 
 .title-container {
@@ -121,5 +128,9 @@ footer {
     width: 50vw;
     display: block;
     margin: 0 auto;
+    text-align: center;
+}
+
+.text-center {
     text-align: center;
 }
