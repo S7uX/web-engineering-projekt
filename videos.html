@@ -2,39 +2,43 @@
 <html lang="de">
 
 <head>
-  <meta charset="utf-8">
-  <title>Videos - Drohnenschwarm-Premium-Experience AG</title>
+    <meta charset="utf-8">
+    <title>Videos - Drohnenschwarm-Premium-Experience AG</title>
 
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/videos.css">
-  <script src="js/main-navigation-element.js"></script>
-  <script src="js/imprint-element.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/videos.css">
+    <script src="js/main-navigation-element.js"></script>
+    <script src="js/imprint-element.js"></script>
 </head>
 <script src="js/main.js"></script>
 
 <body>
 
-  <header>
+<header>
     <nav is="main-navigation"></nav>
-  </header>
+</header>
 
-  <main>
-    <video class="video" controls>
-      <source src="vid/shanghai_bruges.mp4" type="video/mp4">
-    </video>
+<main>
+    <div class="video-container">
+        <video class="video" controls>
+            <source src="vid/shanghai_bruges.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="video-container">
+        <video class="video" controls>
+            <source src="vid/japan.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="video-container">
+        <video class="video" controls>
+            <source src="vid/germany.mp4" type="video/mp4">
+        </video>
+    </div>
+</main>
 
-    <video class="video" controls>
-      <source src="vid/japan.mp4" type="video/mp4">
-    </video>
-
-    <video class="video" controls>
-      <source src="vid/germany.mp4" type="video/mp4">
-    </video>
-  </main>
-
-  <footer>
+<footer>
     <a is="imprint-element"></a>
-  </footer>
+</footer>
 
 </body>
 
