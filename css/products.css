@@ -10,13 +10,9 @@ main {
     margin-bottom: 10ex;
 }
 
+/*#region plans */
 .products-wrapper {
-    flex: 0 0 auto;
     width: 66.6666666667%;
-}
-
-.plans {
-    padding: 10px;
 }
 
 @media (max-width: 1200px) {
@@ -25,27 +21,24 @@ main {
     }
 }
 
+.plans {
+    line-height: 0;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
 @media (min-width: 1200px) {
     .plans {
         background: var(--surface3-dark);
-        box-shadow: 0 6px 35px 0 rgba(0, 0, 0, .1)
     }
 }
 
-
-.plans .plans-table {
-    width: 100%;
-    position: relative
-}
-
-@media (min-width: 1200px) {
-    .plans.data .plans-card {
-        width: 25%
+@media (max-width: 1200px) {
+    .plans{
+        flex-direction: column;
     }
-}
-
-.bg-darker {
-    background-color: var(--surface1-dark)
 }
 
 @media (min-width: 1200px) {
@@ -56,46 +49,23 @@ main {
         z-index: 2;
         background: #3174ff;
         top: -45px;
-        display: block;
+        display: inline-block;
         padding: 10px 56px;
         border-top-left-radius: 6px;
         border-top-right-radius: 6px
     }
 }
 
-.plans {
-    line-height: 0;
-    border-radius: 6px;
-    display: flex;
-    flex-direction: row;
-}
-
-@media (min-width: 1200px) {
-    .plans.thin .plans-card:first-child {
-        width: 25% !important
-    }
-
-    .plans.thin .plans-card {
-        width: 15% !important
-    }
-}
-
 .plans .plans-card {
     width: 20%;
-    display: inline-block;
     flex-grow: 1;
 }
 
 @media (max-width: 1200px) {
-    .plans{
-        flex-direction: column;
-    }
-
     .plans .plans-card {
         margin: 5px 0;
         border-radius: 6px;
         padding: 0 20px;
-        box-shadow: 0 6px 35px 0 rgba(0, 0, 0, .1);
         width: 100%;
         background: var(--surface3-dark);
     }
@@ -105,6 +75,25 @@ main {
     border-bottom: none
 }
 
+.plans tbody{
+    height: 146px;
+}
+
+.plans thead {
+    height: 75px;
+}
+
+.plans .plans-table {
+    width: 100%;
+    position: relative
+}
+
+.plans .plans-table td {
+    border-bottom: 1px solid #d3dbec;
+    line-height: 1.2;
+    font-size: 14px;
+    height: 64px
+}
 
 @media (max-width: 1200px) {
     .plans div.plans-card:first-child {
@@ -130,19 +119,27 @@ main {
         display: none
     }
 }
+/*#endregion plans */
 
-.plans thead {
-    height: 75px;
+/*#region drone */
+.drone {
+    position: absolute;
+    pointer-events: none;
+    width: 10vw;
+    height: 10vh;
+    top: -1px;
+    left: -1px;
+    background-color: var(--brand); /* defines the background color of the image */
+    mask: url(../img/drone.svg) no-repeat center / contain;
+    -webkit-mask: url(../img/drone.svg) no-repeat center;
+    -webkit-mask-size: contain;
 }
 
-.plans .plans-table {
+.svg-container {
+    position: absolute;
+    overflow: hidden;
     width: 100%;
-    position: relative
+    height: 100%;
+    z-index: -1;
 }
-
-.plans .plans-table td {
-    border-bottom: 1px solid #d3dbec;
-    line-height: 1.2;
-    font-size: 14px;
-    height: 64px
-}
+/*#endregion drone */
