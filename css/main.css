@@ -71,6 +71,7 @@ footer {
 }
 
 .main-navigation .nav-item {
+    box-sizing: border-box;
     flex-grow: 1;
     background-color: var(--surface1-dark);
     border: none;
@@ -85,43 +86,23 @@ footer {
 
 /*#endregion* navigation */
 
+.title {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0.8ex;
+}
+
+.main-title {
+    color: var(--brand);
+}
+
 .imprint {
     color: var(--text2-dark);
     font-size: small;
 }
 
-.content {
-    margin-left: 1.2em;
-    margin-right: 1.2em;
-}
-
-@media (min-width: 1400px) {
-    .content {
-        margin-left: 30ex;
-        margin-right: 30ex;
-    }
-}
-
-.title-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-bottom: 5ex;
-}
-
-.title-container .title {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 0;
-    margin-top: 0.8ex;
-}
-
-.title-container .title1 {
-    color: var(--brand);
-}
-
 .video {
-    width: 50vw;
+    width: 55em;
     display: block;
     margin: 0 auto;
     text-align: center;
