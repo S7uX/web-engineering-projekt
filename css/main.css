@@ -107,3 +107,9 @@ footer {
     margin: 0 auto;
     text-align: center;
 }
+
+@media (max-width: 1400px) {
+    .video {
+        width: 100%;
+    }
+}
