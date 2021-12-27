@@ -87,6 +87,7 @@ main {
     border-bottom: 1px solid;
     line-height: 1.2;
     height: 10ex;
+    min-width: 80px;
 }
 
 @media (max-width: 1200px) {

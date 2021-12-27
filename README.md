@@ -6,12 +6,12 @@
  - Webseite: https://s7ux.github.io/web-engineering-projekt/
 
 ## Hinweise
-- Die Seite wurde so entwickelt, dass sie auch auf Smartphone nicht unbedienbar ist. 
-Man beachte die Tabelle auf der products.html. (Responsiveness)
-- Um redundantes HTML-Markup zu vermeiden wurde für das Impressum und den Header mit
+- Bei der Entwicklung wurde auf Responsiveness geachtet. Die Seite sieht auch auf dem Smartphone gut aus.
+Durch Verändern der Browserfenstergröße können Sie sie Responsiveness in Aktion sehen :).
+- Um redundantes HTML zu vermeiden, wurde für das Impressum und die Navigation mit
 sogenannten Custom Elements gearbeitet. https://developer.mozilla.org/de/docs/Web/Web_Components/Using_custom_elements
 - der Eye-Catcher ist auf der products.html zu finden.
-Zum Umsetzen von diesem Eye-Catcher wurde genau für diesen Zweck eine spezielle Bibliothek verwendet:
+Zur Umsetzung dieses Eye-Catchers wurde, genau für diesen Zweck, eine spezielle Bibliothek verwendet:
 https://github.com/juliangarnier/anime/
 
 ## Browser

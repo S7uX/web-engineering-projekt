@@ -1,7 +1,7 @@
 function flyDrone() {
-    let path = anime.path('path');
+    const path = anime.path('path');
 
-    let easings = ['linear', 'easeInCubic', 'easeOutCubic', 'easeInOutCubic'];
+    const easings = ['linear', 'easeInCubic', 'easeOutCubic', 'easeInOutCubic'];
 
     anime({
         targets: '#drone',
