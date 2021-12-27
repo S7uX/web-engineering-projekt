@@ -88,7 +88,7 @@ footer {
     padding: 1.5ex 3em;
     text-align: center;
     text-decoration: none;
-    font-size: clamp(0.8ex, 1vw, 1ex);
+    font-size: clamp(0.85rem, 1vw, 1.2rem);
 }
 
 .main-navigation .nav-item:hover {
