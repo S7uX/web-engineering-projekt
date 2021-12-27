@@ -1,29 +1,120 @@
-main{
+main {
     height: 100%;
     display: flex;
-    justify-content: center; /* horizontal */
-    align-items: center; /* vertical */
-}
-
-.products{
-    display: flex;
     flex-direction: column;
-    min-width: 850px ;
-    width: 50vw;
-    background-color: var(--surface3-dark);
-    border-radius: 40px;
-    padding: 1em 1em 4ex;
+    align-items: center; /* horizontal */
 }
 
-.heading{
-    color: var(--brand)
+.heading {
+    color: var(--brand);
+    margin-bottom: 10ex;
 }
 
-.products .products-row{
-    display: flex;
-    flex-direction: row;
+@media (min-width: 1200px) {
+    .plans {
+        background: var(--surface3-dark);
+        box-shadow: 0 6px 35px 0 rgba(0, 0, 0, .1)
+    }
 }
 
-.products .product-item{
-    width: 50%;
+.text-center {
+    text-align: center;
+}
+
+.plans{
+    padding: 10px;
+}
+
+.plans .plans-table {
+    width: 100%;
+    position: relative
+}
+
+@media (min-width: 1200px) {
+    .plans.data .plans-card {
+        width: 25%
+    }
+}
+
+.bg-darker {
+    background-color: var(--surface1-dark)
+}
+
+@media (min-width: 1200px) {
+    .head-recommended:before {
+        content: 'Preis Leistung';
+        position: absolute;
+        line-height: 1.8;
+        z-index: 2;
+        background: #3174ff;
+        top: -45px;
+        display: block;
+        padding: 10px 56px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px
+    }
+}
+
+.plans {
+    line-height: 0;
+    border-radius: 6px
+}
+
+@media (min-width: 1200px) {
+    .plans.thin .plans-card:first-child {
+        width: 25% !important
+    }
+
+    .plans.thin .plans-card {
+        width: 15% !important
+    }
+}
+
+.plans .plans-card {
+    width: 20%;
+    display: inline-block
+}
+
+@media (max-width: 1200px) {
+    .plans .plans-card {
+        margin: 5px 0;
+        border-radius: 6px;
+        padding: 0 20px;
+        box-shadow: 0 6px 35px 0 rgba(0, 0, 0, .1);
+        width: 100%;
+        background: var(--surface3-dark);
+    }
+}
+
+@media (max-width: 1200px) {
+    .plans div.plans-card:first-child {
+        display: none
+    }
+
+    .plans td:first-child {
+        text-align: left;
+        padding-left: 15px !important
+    }
+}
+
+@media (min-width: 1200px) {
+    .plans td:first-child {
+        display: none
+    }
+}
+
+.plans .plans-table {
+    width: 100%;
+    position: relative
+}
+
+.plans .plans-table tbody tr:last-child td:last-child {
+    border-bottom: none
+}
+
+.plans .plans-table td {
+    border-bottom: 1px solid #d3dbec;
+    line-height: 1.2;
+    font-size: 14px;
+    height: 64px
 }

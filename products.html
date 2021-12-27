@@ -7,44 +7,139 @@
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/products.css">
+    <!--    <link rel="stylesheet" href="css/base.css">-->
     <script src="js/main-navigation-element.js"></script>
     <script src="js/imprint-element.js"></script>
+    <script src="js/lib/anime.min.js"></script>
 </head>
 
 <body>
+
+<script src="js/main.js"></script>
+<script src="js/drone.js"></script>
+
+<div class="svg-container">
+    <div class="drone" id="drone">
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg">
+        <path class="invisible"
+              d="M 525.1505,17.680176 C 284.19027,108.25772 -155.42998,75.465173 82.359745,210.8918 -153.84471,
+                331.36873 366.06666,561.66516 667.26697,576.61486 990.66102,584.5294 1555.0963,548.1735 1328.4035,
+                409.22929 1632.7743,316.89295 1455.8309,149.11164 1208.5296,13.685013 1078.5379,255.51827 610.7548,
+                261.27223 525.1505,17.680176"
+              fill="none"
+        />
+    </svg>
+</div>
 
 <header>
     <nav is="main-navigation"></nav>
 </header>
 
 <main>
-    <div class="products">
-        <h1 class="heading">Produkte und Preise</h1>
-        <h2 class="heading">Dronen für eine Flugshow</h2>
-        <div class="products-row">
-            <b class="product-item">Drohnen Anzahl</b>
-            <b class="product-item">Preis</b>
+    <h1 class="heading">Produkte und Preise</h1>
+    <div class="col-8 px-0">
+        <div class="products plans pt-2">
+            <div class="plans-card">
+                <table class="plans-table">
+                    <thead>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <h4>Plan</h4>
+                        </td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td></td>
+                        <td>Preis</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Drohnen Anzahl</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="plans-card text-center">
+                <table class="plans-table">
+                    <thead class="clear">
+                    <tr>
+                        <td></td>
+                        <td>
+                            <h3>BASIC</h3> für die kleinen Anlässe
+                        </td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Preis</td>
+                        <td>342 €</td>
+                    </tr>
+                    <tr>
+                        <td>Drohnen Anzahl</td>
+                        <td>100</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="plans-card text-center bg-darker">
+                <table class="plans-table head-recommended">
+                    <thead>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <h3>FLEX</h3> klasse
+                        </td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Preis</td>
+                        <td>800 €</td>
+                    </tr>
+                    <tr>
+                        <td>Drohnen Anzahl</td>
+                        <td>500</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="plans-card text-center">
+                <table class="plans-table">
+                    <thead>
+                    <tr>
+                        <td></td>
+                        <td class="pb-3">
+                            <h3>ABGEFAHREN</h3> unvergesslich
+                        </td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="text-darker">Preis</td>
+                        <td>2368</td>
+                    </tr>
+                    <tr>
+                        <td>Drohnen Anzahl</td>
+                        <td>1000</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <div class="products-row">
-            <label class="product-item">100</label>
-            <label class="product-item">342 €</label>
-        </div>
-        <div class="products-row">
-            <label class="product-item">500</label>
-            <label class="product-item">800 €</label>
-        </div>
-        <div class="products-row">
-            <label class="product-item">1000</label>
-            <label class="product-item">2368 €</label>
-        </div>
-        <h2 class="heading product-item">Entwicklung einer individuellen Flugshow</h2>
-        <label>Preis auf Anfrage</label>
     </div>
 </main>
 
 <footer>
     <a is="imprint-element"></a>
 </footer>
+
+<script>
+    flyDrone();
+</script>
+
 
 </body>
 </html>

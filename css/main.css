@@ -94,33 +94,98 @@ footer {
     font-size: small;
 }
 
-.content{
+.content {
     margin-left: 30ex;
     margin-right: 30ex;
 }
 
-.title-container{
+.title-container {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin-bottom: 5ex;
 }
 
-.title-container .title{
+.title-container .title {
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 2.5em;
     margin-bottom: 0;
     margin-top: 0.8ex;
 }
 
-.title-container .title1{
+.title-container .title1 {
     color: var(--brand);
 }
 
-.video{
+.video {
     width: 50vw;
     display: block;
     margin: 0 auto;
     text-align: center;
 }
 
+
+.col-1 {
+    flex: 0 0 auto;
+    width: 8.3333333333%
+}
+
+.col-2 {
+    flex: 0 0 auto;
+    width: 16.6666666667%
+}
+
+.col-3 {
+    flex: 0 0 auto;
+    width: 25%
+}
+
+.col-4 {
+    flex: 0 0 auto;
+    width: 33.3333333333%
+}
+
+.col-5 {
+    flex: 0 0 auto;
+    width: 41.6666666667%
+}
+
+.col-6 {
+    flex: 0 0 auto;
+    width: 50%
+}
+
+.col-7 {
+    flex: 0 0 auto;
+    width: 58.3333333333%
+}
+
+.col-8 {
+    flex: 0 0 auto;
+    width: 66.6666666667%
+}
+
+.col-9 {
+    flex: 0 0 auto;
+    width: 75%
+}
+
+.col-10 {
+    flex: 0 0 auto;
+    width: 83.3333333333%
+}
+
+.col-11 {
+    flex: 0 0 auto;
+    width: 91.6666666667%
+}
+
+.col-12 {
+    flex: 0 0 auto;
+    width: 100%
+}
+
+.px-0 {
+    padding-right: 0 !important;
+    padding-left: 0 !important
+}
