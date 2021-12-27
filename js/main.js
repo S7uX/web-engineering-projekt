@@ -7,20 +7,21 @@ favicon.setAttribute('href', 'favicon.ico');
 head.item(0).appendChild(favicon)
 
 
-class ImprintElement extends HTMLAnchorElement {
+class ImprintElement extends HTMLElement {
     constructor() {
         super();
     }
 
     connectedCallback() {
-        this.classList.add("imprint");
-        this.href = "./imprint.html";
-        this.innerText = "Impressum";
+        const a = document.createElement("a");
+        a.classList.add("imprint");
+        a.href = "./imprint.html";
+        a.innerText = "Impressum";
+        this.appendChild(a);
     }
-
 }
 
-customElements.define('imprint-element', ImprintElement, {extends: 'a'});
+customElements.define('imprint-element', ImprintElement);
 
 
 class MainNavigationElement extends HTMLElement {
@@ -43,4 +44,4 @@ class MainNavigationElement extends HTMLElement {
 
 }
 
-customElements.define('main-navigation', MainNavigationElement, {extends: 'nav'});
+customElements.define('main-navigation', MainNavigationElement);

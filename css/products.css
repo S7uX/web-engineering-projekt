@@ -62,6 +62,7 @@ main {
 
 .plans .plans-card {
     flex-grow: 1;
+    min-width: 150px;
 }
 
 @media (max-width: 1200px) {
@@ -77,14 +78,6 @@ main {
     border-bottom: none
 }
 
-.plans tbody{
-    height: 18ex;
-}
-
-.plans thead {
-    height: 11ex;
-}
-
 .plans .plans-table {
     width: 100%;
     position: relative
@@ -93,7 +86,7 @@ main {
 .plans .plans-table td {
     border-bottom: 1px solid;
     line-height: 1.2;
-    height: 64px
+    height: 10ex;
 }
 
 @media (max-width: 1200px) {
