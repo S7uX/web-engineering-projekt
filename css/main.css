@@ -15,21 +15,6 @@
 
 /*#endregion color_theme */
 
-/*#region general */
-.invisible {
-    visibility: hidden;
-}
-
-.bg-darker {
-    background-color: var(--surface1-dark)
-}
-
-.text-center {
-    text-align: center;
-}
-
-/*#endregion general */
-
 /*#region default_element_styles */
 html, body {
     height: 100vh;
@@ -57,6 +42,8 @@ footer {
 }
 
 main {
+    margin-top: 3ex;
+    margin-bottom: 3ex;
     overflow: auto;
     padding: 1vh;
 }
@@ -72,6 +59,21 @@ footer {
 }
 
 /*#endregion default_element_styles */
+
+/*#region general */
+.invisible {
+    visibility: hidden;
+}
+
+.bg-darker {
+    background-color: var(--surface1-dark)
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*#endregion general */
 
 /*#region navigation */
 .main-navigation {
