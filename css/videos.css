@@ -11,12 +11,13 @@
 
 .video-container p {
     display: flex;
-    font-size: xx-large;
-    margin: 5ex 4ex 0 2ex;
+    font-size: clamp(1.7rem, 1.6vw, 3rem);
+    margin: 3ex 2ex 0 2ex;
     align-items: center;
 }
 
 .video {
+    width: 45em;
     margin-top: 2vh;
     display: flex;
 }
@@ -27,6 +28,6 @@
     }
 
     .video-container p {
-        font-size: clamp(0.85rem, 3.2vw, 5rem);
+        font-size: clamp(0.85rem, 3.2vw, 10rem);
     }
 }
