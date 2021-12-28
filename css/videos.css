@@ -25,4 +25,8 @@
     .video {
         max-width: 100%;
     }
+
+    .video-container p {
+        margin: .5ex .5ex 0 .5ex;
+    }
 }
