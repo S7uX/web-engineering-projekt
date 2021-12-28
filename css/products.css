@@ -1,5 +1,4 @@
-main {
-    height: 100%;
+.content{
     display: flex;
     flex-direction: column;
     align-items: center; /* horizontal */
@@ -14,7 +13,7 @@ main {
 /*#region plans */
 .plans {
     margin-top: 3ex;
-    margin-bottom: 1.5ex;
+    margin-bottom: 5ex;
     width: 66.6666666667%;
     border-radius: 6px;
     display: flex;
