@@ -125,7 +125,11 @@
     top: -1px;
     left: -1px;
     background-color: var(--brand); /* defines the background color of the image */
-    mask: url(../img/drone.svg) no-repeat center;
+    mask: url(../img/drone.svg);
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    /* extra for safari */
     -webkit-mask: url(../img/drone.svg) no-repeat center;
     -webkit-mask-size: contain;
 }
