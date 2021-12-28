@@ -1,4 +1,4 @@
-.content{
+.content {
     display: flex;
     flex-direction: column;
     align-items: center; /* horizontal */
@@ -100,7 +100,7 @@
         padding-left: 15px;
     }
 
-    .plans td{
+    .plans td {
         width: 50%
     }
 
@@ -114,6 +114,7 @@
         display: none
     }
 }
+
 /*#endregion plans */
 
 /*#region drone */
@@ -141,4 +142,5 @@
     height: 100%;
     z-index: -1;
 }
+
 /*#endregion drone */
