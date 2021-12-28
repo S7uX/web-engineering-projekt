@@ -8,12 +8,13 @@ main {
 
 .title {
     margin-top: 3ex;
-    margin-bottom: 5ex;
+    margin-bottom: 7ex;
 }
 
 /*#region plans */
 .plans {
     margin-top: 3ex;
+    margin-bottom: 1.5ex;
     width: 66.6666666667%;
     border-radius: 6px;
     display: flex;

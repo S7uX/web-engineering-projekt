@@ -10,12 +10,14 @@
 }
 
 .video-container p {
-    font-size: xx-large;
-    margin: 5ex 4ex 0 2ex;
+    display: flex;
+    font-size: clamp(1.5rem, 1.6vw, 3rem);
+    margin: 3ex 2ex 0 2ex;
     align-items: center;
 }
 
 .video {
+    width: 45em;
     margin-top: 2vh;
 }
 
@@ -23,14 +25,4 @@
     .video {
         max-width: 100%;
     }
-
-    .video-container p {
-        font-size: clamp(0.85rem, 3.2vw, 5rem);
-    }
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
