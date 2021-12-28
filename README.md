@@ -1,4 +1,4 @@
-# Webengineering Programmentwurf - Valerio Cocco
+# Webengineering Programmentwurf - Valerio Cocco tinf20b3
 
 ## Abgabe: 
  - Gepackter Quellcode im E-Mail Anhang: web-engineering-projekt-valerio-cocco.tar.gz
@@ -11,6 +11,7 @@ Durch Verändern der Browserfenstergröße können Sie sie Responsiveness in Akt
 Am PC ist die Seite aber immer noch am schönsten.
 - Um redundantes HTML zu vermeiden, wurde für das Impressum und die Navigation mit
 sogenannten Custom Elements gearbeitet. https://developer.mozilla.org/de/docs/Web/Web_Components/Using_custom_elements
+diese meckern manche Validatoren an
 - der Eye-Catcher ist auf der products.html zu finden.
 Zur Umsetzung, (genau für diesen Zweck) wurde eine spezielle Bibliothek verwendet:
 https://github.com/juliangarnier/anime/
