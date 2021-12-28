@@ -10,13 +10,12 @@
 }
 
 .video-container p {
-    font-size: clamp(1.7rem, 1.6vw, 3rem);
-    margin: 3ex 2ex 0 2ex;
+    font-size: xx-large;
+    margin: 5ex 4ex 0 2ex;
     align-items: center;
 }
 
 .video {
-    width: 45em;
     margin-top: 2vh;
 }
 
@@ -26,6 +25,12 @@
     }
 
     .video-container p {
-        font-size: clamp(0.85rem, 3.2vw, 10rem);
+        font-size: clamp(0.85rem, 3.2vw, 5rem);
     }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
