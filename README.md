@@ -2,7 +2,7 @@
 
 ## Abgabe: 
  - Gepackter Quellcode im E-Mail Anhang: web-engineering-projekt-valerio-cocco.tar.gz
- - Direktlink: 
+ - Direktlink: https://github.com/S7uX/web-engineering-projekt/raw/master/web-engineering-projekt-valerio-cocco.tar.gz
  - Webseite: https://s7ux.github.io/web-engineering-projekt/
 
 ## Hinweise
@@ -10,7 +10,7 @@
 Durch Verändern der Browserfenstergröße können Sie sie Responsiveness in Aktion sehen :).
 Am PC ist die Seite aber immer noch am schönsten.
 - Um redundantes HTML zu vermeiden, wurde für das Impressum und die Navigation mit
-sogenannten Custom Elements gearbeitet. https://developer.mozilla.org/de/docs/Web/Web_Components/Using_custom_elements
+Custom Elements gearbeitet. https://developer.mozilla.org/de/docs/Web/Web_Components/Using_custom_elements
 diese meckern manche Validatoren an
 - der Eye-Catcher ist auf der products.html zu finden.
 Zur Umsetzung, (genau für diesen Zweck) wurde eine spezielle Bibliothek verwendet:
